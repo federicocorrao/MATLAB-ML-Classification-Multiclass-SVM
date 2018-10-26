@@ -1,0 +1,36 @@
+%\documentclass[../document.tex]{subfiles}
+%\begin{document}
+
+\begin{abstract}
+
+Gli argomenti discussi nella presente tesi di laurea si collocano nel cosiddetto ambito dell'\textit{apprendimento automatico} (\textit{machine learning}) ed in particolare dell'\textit{apprendimento supervisionato}, o \textit{classificazione}. 
+
+Lo scopo ultimo dell'elaborato consiste nel presentare un metodo efficace di classificazione \textit{multiclasse} basato su combinazione di classificatori binari. Il metodo mostrato risulterà essere un criterio di unificazione fra due schemi di riferimento che consentono di ottenere tale tipologia di classificatori $k$-ari: \textit{one-versus-one} (o \textit{one-against-one}) e \textit{\textit{one-versus-all}} (o \textit{one-against-all}). Ci si propone quindi di fornire un criterio razionale per l'applicazione combinata dei suddetti paradigmi, così da ottenere un nuovo approccio alla classificazione le cui \textit{performance} attese siano generalmente maggiori.
+
+Verrà focalizzata l'attenzione sulle \emph{SVM} (\emph{Support Vector Machine}, \textit{macchine a vettori di supporto}): una consolidata famiglia di classificatori che, avendo una formulazione naturale per problemi di separazione binari ($k = 2$ classi), si prestano bene ad una estensione al caso multiclasse ($k > 2$ classi). In virtù della loro versatilità --- e delle buone prestazioni che raggiungono in applicazioni pratiche --- le \textit{SVM} sono ad oggi fra i metodi allo \textit{stato dell'arte} più utilizzati.
+
+L'elaborato non può quindi che iniziare con una rassegna introduttiva dei concetti fondamentali dell'apprendimento automatico, per poi discutere delle \textit{SVM} e dei due sopracitati schemi di classificazione combinatori. Verrà quindi presentato il criterio di unificazione, motivando le scelte adottate nel tentativo di costruire un classificatore più robusto.
+
+Infine, di tutti i metodi discussi saranno mostrati e comparati i relativi risultati rispetto ad una loro applicazione su \textit{dataset} ``reali''. Si evidenzierà, in conclusione, che il criterio presentato consente effettivamente di ottenere --- in tali casi particolari --- un incremento di prestazioni durante la fase di test.
+
+\paragraph{}
+Nel \textbf{Capitolo 1} verrà introdotto l'apprendimento automatico, descrivendone brevemente i concetti fondamentali, presentandone una serie di applicazioni ed evidenziando l'importanza che esso ricopre all'interno del panorama tecnologico dell'informatica odierna.
+Si darà una breve descrizione della tipologia di \textit{learning} inerente agli argomenti affrontati --- l'apprendimento \textit{supervisionato} --- esponendone scopi e problematiche connesse.
+
+\paragraph{}
+Nel \textbf{Capitolo 2} verranno presentate le \textit{Support Vector Machine}, esaminando il caso in cui i dati di \textit{training} siano \textit{linearmente separabili} e quello in cui non lo siano (il cosiddetto caso \textit{soft-margin}). Saranno in introdotte le \textit{funzioni kernel} e verrà mostrato come il loro impiego possa condurre ad una generalizzazione delle \textit{SVM} al caso \textit{non-lineare} --- il \textit{kernel trick}. Delle \textit{SVM} verranno presentati vantaggi e svantaggi, nonché brevi considerazioni sulla loro complessità di calcolo e implementazione.
+	
+\paragraph{}		
+Nel \textbf{Capitolo 3} saranno quindi proposti i due metodi più utilizzati per la generalizzazione classificatori binari al caso multiclasse: \textit{one-against-one} e \textit{one-against-all}. Anche in questo caso verranno esposti \textit{pro} e \textit{contro}, considerazioni sulle rispettive complessità di calcolo, ed osservazioni sulla loro applicazione alle \textit{SVM}.
+Verrà presentato inoltre il criterio di unificazione per tali schemi, evidenziando le intuizioni che hanno condotto alla sua produzione.
+			
+\paragraph{}
+Nel \textbf{Capitolo 4}, infine, verranno presentati i sopracitati \textit{dataset} e la natura dei dati in essi contenuti.
+Saranno quindi mostrati i risultati di classificazione ottenuti su di essi mediante l'applicazione dei metodi \textit{k-NN}, \textit{SVM one-vs-one}, \textit{SVM one-vs-all} e del \textit{metodo ibrido}.
+Alla luce di tali risultati, si arriverà alla conclusione che il metodo ibrido è --- in alcune circostanze --- effettivamente in grado di raggiungere \textit{performance} migliori rispetto ai due metodi combinatori applicati separatamente.
+
+\paragraph{}
+La stesura della presente tesi di laurea è stata costantemente accompagnata dalla produzione di codice MATLAB (\textit{r2014a Student Version}\footnote{http://www.mathworks.it/academia/student\_version/}) al fine di mettere in pratica quanto discusso. Nel corso dei vari capitoli sono presenti --- ove ritenuto opportuno --- figure e grafici.
+\end{abstract}
+
+%\end{document}

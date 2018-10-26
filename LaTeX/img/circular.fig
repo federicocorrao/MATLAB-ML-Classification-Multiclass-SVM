@@ -1,0 +1,633 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The MathWorks, Inc. Version 8.0.0.783 (R2012b). Operating System: Microsoft Windows 7.
+%%Title: C:\Users\Federico\Desktop\Tesi Latex\img\circular.fig
+%%CreationDate: 06/24/2014  21:52:36
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:   141   265   453   576
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/ISOLatin1Encoding where {pop /WindowsLatin1Encoding 256 array bdef
+ISOLatin1Encoding WindowsLatin1Encoding copy pop
+/.notdef/.notdef/quotesinglbase/florin/quotedblbase/ellipsis/dagger
+/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef/.notdef
+/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet
+/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/.notdef/.notdef
+/Ydieresis WindowsLatin1Encoding 128 32 getinterval astore pop}
+{/WindowsLatin1Encoding StandardEncoding bdef} ifelse
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:   141   265   453   576
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 1692 6912 csm
+
+    0     0  3747  3728 rc
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 3748 3729 rf
+6 w
+gs 302 189 3261 3261 rc
+2.4 w
+gs 1062 942 1771 1713 rc
+/c8 { 1.000000 0.000000 0.000000 sr} bdef
+c8
+  54   54 1688 1352 PO
+  54   54 1250 1936 PO
+  54   54 1938 1824 PO
+  54   54 1652 1468 PO
+  54   54 2194 1988 PO
+  54   54 1755 1992 PO
+  54   54 2282 1784 PO
+  54   54 2364 2024 PO
+  54   54 1745 2297 PO
+  54   54 2530 1829 PO
+  54   54 2179 1352 PO
+  54   54 2371 1307 PO
+  54   54 2267 1970 PO
+  54   54 1681 2540 PO
+  54   54 2055 1764 PO
+  54   54 1954 2485 PO
+  54   54 1944 2345 PO
+  54   54 2471 2102 PO
+  54   54 1858 2115 PO
+  54   54 2189 1563 PO
+  54   54 2655 1728 PO
+  54   54 2723 1687 PO
+  54   54 2381 1738 PO
+  54   54 1948 1141 PO
+  54   54 2418 2406 PO
+  54   54 1183 2005 PO
+  54   54 1707 1896 PO
+  54   54 2020 1953 PO
+  54   54 2170 1582 PO
+  54   54 1792 1068 PO
+  54   54 1712 1950 PO
+  54   54 2451 1919 PO
+  54   54 1192 2117 PO
+  54   54 2523 1749 PO
+  54   54 2144 2462 PO
+  54   54 1980 1363 PO
+  54   54 2169 2451 PO
+  54   54 1364 1336 PO
+  54   54 2004 1902 PO
+  54   54 1919 2524 PO
+  54   54 1171 2099 PO
+  54   54 2393 1285 PO
+  54   54 2333 1660 PO
+  54   54 2455 1318 PO
+  54   54 2183 1746 PO
+  54   54 2357 1477 PO
+  54   54 2050 1051 PO
+  54   54 1830 2248 PO
+  54   54 1525 1979 PO
+  54   54 2224 1795 PO
+  54   54 2034 1769 PO
+  54   54 2589 1956 PO
+  54   54 1590 1974 PO
+  54   54 2053 1416 PO
+  54   54 1923 1247 PO
+  54   54 1924 2007 PO
+  54   54 2139 1237 PO
+  54   54 1659 1971 PO
+  54   54 2546 1936 PO
+  54   54 2321 2378 PO
+  54   54 1948 1558 PO
+  54   54 1407 1798 PO
+  54   54 1436 2283 PO
+  54   54 2181 2280 PO
+  54   54 2032 1667 PO
+  54   54 2524 1749 PO
+  54   54 2532 1536 PO
+  54   54 1349 1768 PO
+  54   54 1310 2309 PO
+  54   54 1365 2080 PO
+  54   54 1613 1112 PO
+  54   54 2233 1840 PO
+  54   54 1665 1965 PO
+  54   54 1397 1318 PO
+  54   54 1444 1980 PO
+  54   54 1922 2150 PO
+  54   54 1550 2504 PO
+  54   54 1887 1340 PO
+  54   54 2577 1533 PO
+  54   54 1456 1313 PO
+  54   54 1406 2376 PO
+  54   54 2091 1195 PO
+  54   54 1944 2525 PO
+  54   54 2371 1623 PO
+  54   54 1904 1396 PO
+  54   54 2192 2545 PO
+  54   54 2117 1319 PO
+  54   54 1419 2434 PO
+  54   54 1276 1921 PO
+  54   54 2504 2111 PO
+  54   54 1908 1543 PO
+  54   54 2658 1499 PO
+  54   54 1880 2363 PO
+  54   54 2018 2432 PO
+  54   54 2367 2103 PO
+  54   54 2293 1983 PO
+  54   54 2703 1751 PO
+  54   54 1992 1204 PO
+  54   54 1899 1848 PO
+  54   54 2539 2020 PO
+0 sg
+  54   54 1688 1352 FO
+  54   54 1250 1936 FO
+  54   54 1938 1824 FO
+  54   54 1652 1468 FO
+  54   54 2194 1988 FO
+  54   54 1755 1992 FO
+  54   54 2282 1784 FO
+  54   54 2364 2024 FO
+  54   54 1745 2297 FO
+  54   54 2530 1829 FO
+  54   54 2179 1352 FO
+  54   54 2371 1307 FO
+  54   54 2267 1970 FO
+  54   54 1681 2540 FO
+  54   54 2055 1764 FO
+  54   54 1954 2485 FO
+  54   54 1944 2345 FO
+  54   54 2471 2102 FO
+  54   54 1858 2115 FO
+  54   54 2189 1563 FO
+  54   54 2655 1728 FO
+  54   54 2723 1687 FO
+  54   54 2381 1738 FO
+  54   54 1948 1141 FO
+  54   54 2418 2406 FO
+  54   54 1183 2005 FO
+  54   54 1707 1896 FO
+  54   54 2020 1953 FO
+  54   54 2170 1582 FO
+  54   54 1792 1068 FO
+  54   54 1712 1950 FO
+  54   54 2451 1919 FO
+  54   54 1192 2117 FO
+  54   54 2523 1749 FO
+  54   54 2144 2462 FO
+  54   54 1980 1363 FO
+  54   54 2169 2451 FO
+  54   54 1364 1336 FO
+  54   54 2004 1902 FO
+  54   54 1919 2524 FO
+  54   54 1171 2099 FO
+  54   54 2393 1285 FO
+  54   54 2333 1660 FO
+  54   54 2455 1318 FO
+  54   54 2183 1746 FO
+  54   54 2357 1477 FO
+  54   54 2050 1051 FO
+  54   54 1830 2248 FO
+  54   54 1525 1979 FO
+  54   54 2224 1795 FO
+  54   54 2034 1769 FO
+  54   54 2589 1956 FO
+  54   54 1590 1974 FO
+  54   54 2053 1416 FO
+  54   54 1923 1247 FO
+  54   54 1924 2007 FO
+  54   54 2139 1237 FO
+  54   54 1659 1971 FO
+  54   54 2546 1936 FO
+  54   54 2321 2378 FO
+  54   54 1948 1558 FO
+  54   54 1407 1798 FO
+  54   54 1436 2283 FO
+  54   54 2181 2280 FO
+  54   54 2032 1667 FO
+  54   54 2524 1749 FO
+  54   54 2532 1536 FO
+  54   54 1349 1768 FO
+  54   54 1310 2309 FO
+  54   54 1365 2080 FO
+  54   54 1613 1112 FO
+  54   54 2233 1840 FO
+  54   54 1665 1965 FO
+  54   54 1397 1318 FO
+  54   54 1444 1980 FO
+  54   54 1922 2150 FO
+  54   54 1550 2504 FO
+  54   54 1887 1340 FO
+  54   54 2577 1533 FO
+  54   54 1456 1313 FO
+  54   54 1406 2376 FO
+  54   54 2091 1195 FO
+  54   54 1944 2525 FO
+  54   54 2371 1623 FO
+  54   54 1904 1396 FO
+  54   54 2192 2545 FO
+  54   54 2117 1319 FO
+  54   54 1419 2434 FO
+  54   54 1276 1921 FO
+  54   54 2504 2111 FO
+  54   54 1908 1543 FO
+  54   54 2658 1499 FO
+  54   54 1880 2363 FO
+  54   54 2018 2432 FO
+  54   54 2367 2103 FO
+  54   54 2293 1983 FO
+  54   54 2703 1751 FO
+  54   54 1992 1204 FO
+  54   54 1899 1848 FO
+  54   54 2539 2020 FO
+gr
+
+0 sg
+gr
+
+2.4 w
+0 sg
+gs 207 97 3419 3437 rc
+/c9 { 0.000000 0.000000 1.000000 sr} bdef
+c9
+  54   54 2538 3298 PO
+  54   54 2873 2760 PO
+  54   54 1336 3279 PO
+  54   54  668 2408 PO
+  54   54 2569  801 PO
+  54   54  681 1555 PO
+  54   54 1162  689 PO
+  54   54 2139  508 PO
+  54   54  607 2688 PO
+  54   54 1329  358 PO
+  54   54 2973 2423 PO
+  54   54 3287 2683 PO
+  54   54 1887  814 PO
+  54   54 2665 1204 PO
+  54   54 2270  914 PO
+  54   54  639 1815 PO
+  54   54 1819 2652 PO
+  54   54 2346  275 PO
+  54   54 1950  298 PO
+  54   54 2428 2487 PO
+  54   54 1061 1310 PO
+  54   54 1076 2589 PO
+  54   54 2030  862 PO
+  54   54 3141  916 PO
+  54   54  775 1934 PO
+  54   54  355 1590 PO
+  54   54 2707  713 PO
+  54   54  811 2895 PO
+  54   54  458 2237 PO
+  54   54 1041 3113 PO
+  54   54 2705  827 PO
+  54   54 1944 3142 PO
+  54   54 2194  340 PO
+  54   54  829 1953 PO
+  54   54 2213 3068 PO
+  54   54 3281 1628 PO
+  54   54 1556 1074 PO
+  54   54 2880 2792 PO
+  54   54 2625 2842 PO
+  54   54  468 2179 PO
+  54   54 2692 2664 PO
+  54   54 3418 2303 PO
+  54   54 2554 3014 PO
+  54   54 2549 2624 PO
+  54   54 3148  949 PO
+  54   54 1134 2935 PO
+  54   54 1679 2660 PO
+  54   54  989 2601 PO
+  54   54 2367 3170 PO
+  54   54 3474 1478 PO
+  54   54 2035 2627 PO
+  54   54 1746 3424 PO
+  54   54 1859  631 PO
+  54   54 1860  206 PO
+  54   54 1010 2829 PO
+  54   54 1074  561 PO
+  54   54 2320 3106 PO
+  54   54  626 1359 PO
+  54   54 2158 2906 PO
+  54   54 3283 1900 PO
+  54   54 1475  422 PO
+  54   54 2891  613 PO
+  54   54 3130 2674 PO
+  54   54  546 2189 PO
+  54   54 3457 2063 PO
+  54   54 1184 2684 PO
+  54   54 3345 1873 PO
+  54   54  733 2175 PO
+  54   54  754 2016 PO
+  54   54 2734  903 PO
+  54   54 1186  866 PO
+  54   54 3055 1632 PO
+  54   54 2668  652 PO
+  54   54 1898 3052 PO
+  54   54 3516 1512 PO
+  54   54  983  763 PO
+  54   54 2599 2602 PO
+  54   54 1498 2970 PO
+  54   54 1510 2901 PO
+  54   54 2496  427 PO
+  54   54  479 1263 PO
+  54   54  563 2589 PO
+  54   54 3337 1909 PO
+  54   54 2245  768 PO
+  54   54 1947  738 PO
+  54   54 1814  284 PO
+  54   54 1933 3128 PO
+  54   54  482 1417 PO
+  54   54 3190 1348 PO
+  54   54  476 1896 PO
+  54   54 2240  552 PO
+  54   54 2377 3233 PO
+  54   54 1539  537 PO
+  54   54 3174 1601 PO
+  54   54  965 2461 PO
+  54   54 2429 2562 PO
+  54   54 1058 1009 PO
+  54   54 1931 2726 PO
+  54   54  316 1932 PO
+  54   54  952 2076 PO
+0 sg
+  54   54 2538 3298 FO
+  54   54 2873 2760 FO
+  54   54 1336 3279 FO
+  54   54  668 2408 FO
+  54   54 2569  801 FO
+  54   54  681 1555 FO
+  54   54 1162  689 FO
+  54   54 2139  508 FO
+  54   54  607 2688 FO
+  54   54 1329  358 FO
+  54   54 2973 2423 FO
+  54   54 3287 2683 FO
+  54   54 1887  814 FO
+  54   54 2665 1204 FO
+  54   54 2270  914 FO
+  54   54  639 1815 FO
+  54   54 1819 2652 FO
+  54   54 2346  275 FO
+  54   54 1950  298 FO
+  54   54 2428 2487 FO
+  54   54 1061 1310 FO
+  54   54 1076 2589 FO
+  54   54 2030  862 FO
+  54   54 3141  916 FO
+  54   54  775 1934 FO
+  54   54  355 1590 FO
+  54   54 2707  713 FO
+  54   54  811 2895 FO
+  54   54  458 2237 FO
+  54   54 1041 3113 FO
+  54   54 2705  827 FO
+  54   54 1944 3142 FO
+  54   54 2194  340 FO
+  54   54  829 1953 FO
+  54   54 2213 3068 FO
+  54   54 3281 1628 FO
+  54   54 1556 1074 FO
+  54   54 2880 2792 FO
+  54   54 2625 2842 FO
+  54   54  468 2179 FO
+  54   54 2692 2664 FO
+  54   54 3418 2303 FO
+  54   54 2554 3014 FO
+  54   54 2549 2624 FO
+  54   54 3148  949 FO
+  54   54 1134 2935 FO
+  54   54 1679 2660 FO
+  54   54  989 2601 FO
+  54   54 2367 3170 FO
+  54   54 3474 1478 FO
+  54   54 2035 2627 FO
+  54   54 1746 3424 FO
+  54   54 1859  631 FO
+  54   54 1860  206 FO
+  54   54 1010 2829 FO
+  54   54 1074  561 FO
+  54   54 2320 3106 FO
+  54   54  626 1359 FO
+  54   54 2158 2906 FO
+  54   54 3283 1900 FO
+  54   54 1475  422 FO
+  54   54 2891  613 FO
+  54   54 3130 2674 FO
+  54   54  546 2189 FO
+  54   54 3457 2063 FO
+  54   54 1184 2684 FO
+  54   54 3345 1873 FO
+  54   54  733 2175 FO
+  54   54  754 2016 FO
+  54   54 2734  903 FO
+  54   54 1186  866 FO
+  54   54 3055 1632 FO
+  54   54 2668  652 FO
+  54   54 1898 3052 FO
+  54   54 3516 1512 FO
+  54   54  983  763 FO
+  54   54 2599 2602 FO
+  54   54 1498 2970 FO
+  54   54 1510 2901 FO
+  54   54 2496  427 FO
+  54   54  479 1263 FO
+  54   54  563 2589 FO
+  54   54 3337 1909 FO
+  54   54 2245  768 FO
+  54   54 1947  738 FO
+  54   54 1814  284 FO
+  54   54 1933 3128 FO
+  54   54  482 1417 FO
+  54   54 3190 1348 FO
+  54   54  476 1896 FO
+  54   54 2240  552 FO
+  54   54 2377 3233 FO
+  54   54 1539  537 FO
+  54   54 3174 1601 FO
+  54   54  965 2461 FO
+  54   54 2429 2562 FO
+  54   54 1058 1009 FO
+  54   54 1931 2726 FO
+  54   54  316 1932 FO
+  54   54  952 2076 FO
+gs 302 189 3261 3261 rc
+6 w
+gr
+gr
+
+6 w
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF

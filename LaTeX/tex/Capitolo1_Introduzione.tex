@@ -1,0 +1,84 @@
+%\documentclass[../document.tex]{subfiles}
+%\begin{document}
+
+\chapter{Introduzione}
+		
+\section{Apprendimento automatico}
+L'\textbf{apprendimento automatico} (noto in letteratura come \emph{machine learning}) è, come suggerito dal termine, un'area fondamentale dell'intelligenza artificiale il cui scopo consiste nello studio e implementazione di sistemi in grado di \emph{apprendere} da insiemi di dati.
+		
+Per sistema	si intende un algoritmo che, ricevuti dei dati in input (\emph{osservazioni}), elabora gli stessi al fine di produrre conoscenza. Tale conoscenza è quindi inizialmente implicita, nascosta nelle relazioni fra i dati di interesse. Il compito del sistema è di analizzare questi ultimi, al fine di esplicitare informazione utile non nota a priori.
+
+La conoscenza sintetizzata da questi algoritmi è in genere utilizzata da altri sistemi nel prendere \textit{decisioni} autonomamente, durante l'esecuzione di specifiche attività (più o meno complesse). Ciò spiega la grande diffusione delle tecniche di \emph{machine learning} in applicazioni pratiche, dove è cruciale la possibilità di effettuare scelte intelligenti senza la supervisione di un essere umano. 
+		
+\paragraph{}		
+Di seguito una lista di applicazioni ben note delle suddette tecniche:
+\begin{itemize}
+\item{\textbf{Individuazione di facce in immagini e video} (\emph{face detection}); e.g. in sistemi real-time per il riconoscimento di un interlocutore posto di fronte un sensore (funzionalità introdotta di recente anche nelle moderne fotocamere digitali e negli smartphone}) \cite{hearst}
+						
+\item{\textbf{Riconoscimento di caratteri} (\emph{OCR}, \emph{Optical Character Recognition}); e.g. estrazione di informazioni da documenti cartacei; book scanning; conversione real-time di caratteri manoscritti (funzionalità sovente presente in dispositivi touchscreen); tecnologie assistive}
+
+\item{\textbf{Riconoscimento vocale} (\textit{speech recognition}); e.g. in sistemi di scrittura automatica sotto dettatura (\textit{dictation system}); interfacce uomo-macchina basate su comandi vocali; tecnologie assistive}
+			
+\item{\textbf{Classificazione di testi} (\textit{text categorization}); e.g. in \textit{topics} per sistemi di \textit{information retrieval} \cite{hearst} (memorizzazione e recupero di documenti) e motori di ricerca; riconoscimento delle e-mail indesiderate nelle caselle di posta elettronica (\emph{spam filtering})}
+			
+\end{itemize}
+		
+\paragraph{}
+Altri campi di ricerca e sviluppo che fanno uso delle tecnologie offerte dal \textit{machine learning} sono: \textit{data mining} (estrazione di informazione e conoscenza utile da grandi quantità di dati) per \textit{marketing} (ovvero in ricerche di mercato) e \textit{business intelligence }(raccolta e analisi di dati in ambito aziendale); bioinformatica, medicina (e.g. diagnosi automatizzata), videoludica, robotica, sicurezza informatica e molto altro.
+È quindi naturale il manifestarsi di un interesse via via crescente per tali tecniche, che negli ultimi anni hanno avuto una diffusione capillare in qualsiasi contesto che preveda la presenza di dati e dispositivi di calcolo.
+		
+\paragraph{}
+Una nota definizione di ``apprendimento'' è data da T. Mitchell in \cite{mitchell97}:
+\begin{quote}
+	Un programma (algoritmo, sistema) che svolge un dato insieme di attività $T$ apprende da una certa esperienza $E$ se le sue prestazioni (misurate da una certa metrica $P$) nel compiere un'attività in $T$ migliorano grazie all'esperienza E.
+\end{quote}
+dove l'esperienza passata $E$ è rappresentata sotto forma di dati in input dai quali apprendere.
+		
+\paragraph{}
+I principali metodi di apprendimento automatico si dividono in due macro-categorie, a seconda della natura dei
+problemi che affrontano (ovvero dalla tipologia dei dati in esame): \textbf{apprendimento supervisionato} e \textbf{non supervisionato}.
+
+L'apprendimento non supervisionato si rivolge a problemi di natura diversa da quelli affrontati nei prossimi capitoli; è quindi da considerarsi al di fuori degli scopi di questa tesi di laurea. Per una trattazione didattica dell'argomento si veda \cite{bing2011}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section{Apprendimento supervisionato}
+L'apprendimento \textbf{supervisionato} mira ad istruire un sistema cosicché, al verificarsi di un evento futuro (i.e. la ricezione di un'\textit{osservazione} in input), esso sia in grado di prendere una decisione in risposta all'evento --- inferendo quest'ultima in base alla valutazione di una serie di \textit{esempi}, passati o ideali.
+		
+Tale insieme di esempi iniziali è detto \textit{training set} (''insieme di addestramento'').	Un algoritmo di apprendimento supervisionato genera quindi, a partire dal \textit{training set}, una \emph{funzione di decisione} che, tenendo conto degli esempi già noti, è in grado di fornire (in output) una decisione per ogni nuovo evento (in input).
+		
+Una funzione di questo tipo è anche detta \textbf{classificatore}, e il problema in questione è detto \textbf{classificazione}. Per comprendere i motivi dietro la scelta di questa nomenclatura, si consideri una definizione più formale del problema.
+
+\paragraph{}
+Sia $T$ un \textit{training set} di $n$ elementi, composto da coppie ordinate:
+\begin{equation}
+	T = \left\{ { (\boldsymbol{x}_i, y_i);\; i = 1, 2 \;...\; n;\; y_i \in C }\right\} \;
+\end{equation}
+$C$ è l'insieme delle \textit{etichette di classe} (\textit{class labels}). La coppia $(\boldsymbol{x}_i, y_i)$ indica che l'esempio $\boldsymbol{x}_i$ (la cui natura può essere varia, e.g. $\boldsymbol{x}_i \in \mathbb{R}^d$) appartiene alla \textit{classe} $y_i$.
+
+Sia quindi $f$ funzione di decisione ottenuta (con un qualsiasi metodo di apprendimento) a partire dal \textit{training set} $T$, che associa ad ogni osservazione $\boldsymbol{x}$ un'etichetta di classe $y \in C$.	Si dice che $f$ \textit{classifica} $\boldsymbol{x}$ con etichetta $y$: la scelta di una decisione da prendere in risposta all'evento rappresentato dall'input $\boldsymbol{x}$ è una \textit{predizione} del valore di $y$ da parte di $f$.
+		
+\paragraph{}		
+Tale predizione è una valutazione di tipo qualitativo, dal momento che classificare l'osservazione $x$ equivale ad associare $x$ ad una categoria di dati, in qualche modo simili fra loro.  
+Il problema della classificazione è perciò, intuitivamente,  quello della ``separazione'' fra dati di diverso tipo. La predizione dell'etichetta per $x$ sarà in genere tanto più precisa quanto lo sarà la facilità con cui si distinguono dati appartenenti a classi diverse. Se il classificatore non riesce ad assegnare l'etichetta corretta per l'osservazione $\boldsymbol{x}$ (cioè $f(\boldsymbol{x}) = y_{\text{predetta}} \neq y_{\text{reale}}$), si dice che essa è stata \textit{misclassificata}.
+
+Si indica con \textit{test set} un insieme di osservazioni future, disgiunte dal \textit{training set}, sulle quali applicare la funzione di decisione --- ovvero per le quali si è interessati a predire l'etichetta di classe.
+Classificatori (e, per estensione, metodi di apprendimento) diversi vengono spesso comparati tramite parametri indicatori delle rispettive \textit{performance} ottenute su un \textit{test set}.
+Tali parametri sono generalmente calcolati ricorrendo ad una \textit{matrice di confusione}, contenente informazioni sulle osservazioni misclassificate in fase di test (e.g \textit{accuracy}).
+
+\paragraph{}
+È evidente che la scelta del \textit{training set} per l'addestramento di un metodo di classificazione influenza la funzione di decisione $f$ trovata, quindi le sue performance.
+Si discuteranno questi aspetti in un contesto pratico nel \textbf{Capitolo 4}, quando verranno confrontate le prestazioni di diversi metodi di classificazione multiclasse basati su SVM --- e non solo.
+
+Per adesso, ci si limiterà a dire che la fase di addestramento di un classificatore $f(\boldsymbol{x}; \alpha)$ può essere vista come la ricerca di un set di parametri $\alpha$ in modo da massimizzare le prestazioni di $f$, fissato il \textit{training set} \cite{tutorial}. I motivi di questa considerazione saranno evidenti nel corso del \textbf{Capitolo 2}, dove mostreremo che l'addestramento di una Support Vector Machine (e quindi la ricerca di $f$) consiste sostanzialmente nella risoluzione di un problema di ottimizzazione che fornisca parametri $\alpha$ tali da soddisfare un criterio di ``massimizzazione della separazione'' fra due classi.
+	
+\paragraph{}
+Come ultima considerazione di carattere generale sull'argomento, è necessario far presente che tutti i metodi di apprendimento supervisionato utilizzano una \textit{assunzione} fondamentale: suppongono infatti che gli esempi del \textit{training set} e le osservazioni da classificare provengano dalla stessa distribuzione di probabilità. Intuitivamente, affinché $f$ riesca a classificare bene il \textit{test set} (per un dato problema) occorre che sia addestrata con esempi sufficientemente \textit{rappresentativi} del problema in esame --- quindi delle sue classi \cite{mitchell97}.
+Questa assunzione è spesso violata in una certa misura, con conseguente perdita di prestazioni da parte del classificatore
+\cite{bing2011}.
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\end{document}
+	
